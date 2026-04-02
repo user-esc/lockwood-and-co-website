@@ -23,20 +23,20 @@
 
     .instrument-serif-regular {
       font-family: "Instrument Serif", serif;
-      font-weight: 400;
+      font-weight: 300;
       font-style: normal;
     }
 
     .instrument-serif-regular-italic {
       font-family: "Instrument Serif", serif;
-      font-weight: 400;
+      font-weight: 300;
       font-style: italic;
     }
     
     body {
       background-color: #1B2626;
       font-family: "Overpass Mono", monospace;
-      font-size: 18px;
+      font-size: 20px;
       margin: 0 auto;
       max-width:1440px;
       color: white;
@@ -47,31 +47,65 @@
       margin: 120px;
     }
     
+    .two-grids {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    
+    .three-grids {
+      
+    }
+    
     nav {
         
     }
     
     nav ul {
-      
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+      text-align: right;
     }
     
     nav li {
-      
+      display: inline;
+      padding: 0px 10px;
     }
     
-    nav a{
-      
+    nav a {
+      text-decoration: none;  
+      color: white;
+    }
+    
+    nav a:hover {
+      color: #e3446c;
+    }
+    
+    h1, h2, h3 {
+      font-family: "Instrument Serif", serif; 
     }
     
     h1 {
+      font-size: 4em;
     }
 
   </style>
 </head>
 <body>
   <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li>Cases</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    
+    <h1>Lockwood & Co.</h1>
     <p>
-    About our team...
+    At Greg's Banh Mi, we're serving up the perfect marriage of French and Vietnamese culinary traditions—crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavorus that'll make your taste buds sing.
     </p>
   </div>
 </body>
