@@ -2,6 +2,7 @@
 <html lang="en-CA">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lockwood &amp; Co</title>
   
   <!--Google Fonts-->
@@ -34,11 +35,11 @@
     }
     
     body {
-      background-color: #232626;
+      background-color: #1C1C1C;
       font-family: "Overpass Mono", monospace;
       font-size: 20px;
       margin: 0 auto;
-      max-width:1440px;
+      max-width: 1440px;
       color: white;
     }
     
@@ -49,36 +50,33 @@
     
     .two-grids {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: 50% 50%;
+      align-items: center;
     }
+    
     
     .three-grids {
       
     }
     
-    nav {
-        
-    }
-    
-    nav ul {
-      list-style-type: none;
-      margin: 0px;
-      padding: 0px;
+    #nav {
+      position: sticky;
+      top: 0;
       overflow: hidden;
-      text-align: right;
+      background-color: red;
+      text-align: center;
+      margin: 0 120px;
+      padding: 10px 0;
     }
-    
-    nav li {
-      display: inline;
-      padding: 0px 10px;
-    }
-    
-    nav a {
+
+    #nav a {
       text-decoration: none;  
       color: white;
+      padding: 0px 20px;
+      font-size: 20px;
     }
     
-    nav a:hover {
+    #nav a:hover {
       color: #e3446c;
     }
     
@@ -90,22 +88,48 @@
     h1 {
       font-size: 4em;
     }
+    
+    h2 {
+      font-size: 2.5em;
+    }
 
   </style>
 </head>
 <body>
-  <div class="container">
-    <nav>
+  
+    <div id="nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="agents.html">Agents</a></li>
-        <li><a href="archives.html">Archives</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+        <a href="index.html">Home</a>
+        <a href="agents.html">Agents</a>
+        <a href="archives.html">Archives</a>
+        <a href="contact.html">Contact</a>
+    </div>
     
+  <div class="container">
     <h1 style="padding-top: 100px;">Lockwood & Co.</h1>
     <p style="max-width: 800px;">An independent psychical investigation agency based in London, England, founded by Anthony Lockwood. Despite being the city's smallest agency, our team of sensitives are more than capable of handling any haunting!</p>
+    
+    <h2 style="text-align: center;">Our Mission</h2>
+    <p style="text-align: center; max-width: 600px; margin: 0 25%; padding-bottom: 100px">
+      Here at Lockwood & Co., we are dedicated to serving the public in Britain's fight against the Problem. We investigate hauntings, dealing with dangerous manifestations, with the goal of keeping the public safe. Whether you're troubled by lurkers, cold maidens, or wraiths, we're here to handle any disturbances.
+    </p>
+    
+    <hr style="border: none; height: 0.5px; background-color: white;">
+    <div class="two-grids">
+      <div><h2>1. Locate the visitor</h2></div>
+      <div>
+        <p>Utilize our talents to identify a visitor and track its vanishing point to locate the source.</p>
+      </div>
+    </div>
+    <hr style="border: none; height: 0.5px; background-color: white;">
+    <div class="two-grids">
+      <div><h2>2. Contain the source</h2></div>
+      <div>
+        <p>Retrieve and seal the source with protective materials to eventually be disposed of.</p>
+      </div>
+    </div>
+    <hr style="border: none; height: 0.5px; background-color: white;">
+      
   </div>
 </body>
 </html>
