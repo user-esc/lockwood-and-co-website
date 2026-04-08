@@ -66,6 +66,35 @@
       text-align: center;
     }
     
+    #footer-grid {
+      display: grid;
+      grid-template-columns: 50% 20% 20%;
+      text-align: left;
+      align-items: top;
+      padding: 30px;
+      background-color: #282D2D;
+    }
+    
+    #footer-links {
+      list-style-type: none;
+      margin-top: 50px;
+      line-height: 1.7;
+    }
+    
+    footer {
+      margin: 0 120px;
+    }
+    
+    footer a {
+      text-decoration: none;  
+      color: white;
+    }
+    
+   footer a: hover {
+      text-decoration: none;  
+      color: red;
+    }
+    
     #nav {
       position: sticky;
       top: 0;
@@ -100,16 +129,30 @@
       font-size: 2.8em;
     }
     
+    h3 {
+      font-size: 2em;
+    }
+    
     hr {
       border: none;
       height: 0.5px;
       background-color: white; 
     }
+    
+    .button {
+      display: block;
+      padding: 15px 50px;
+      border: 1px solid white;
+      color: white;
+      text-decoration: none;
+      border-radius: 100px;
+      position: absolute;
+      right: 650px;
+    }
 
   </style>
 </head>
 <body>
-  
     <div id="nav">
       <ul>
         <a href="index.html">Home</a>
@@ -165,7 +208,33 @@
         <p>George Cubbins</p>
       </div>
     </div>
-    
+    <hr style="visibility:hidden;">
+    <a href="agents.html" class="button">Learn More</a>
   </div>
+      <footer>
+      <div id="footer-grid">
+        <div>
+          <h2 style="margin-left: 60px; max-width: 90%">After dark, ring the bell and wait beyond the iron line. </h2>
+        </div>
+        <div>
+          <ul id="footer-links">
+            <li>NAVIGATE</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="archives.html">Archives</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul id="footer-links">
+            <li>CONTACT AND VISIT</li>
+            <li>35 Portland Row</li>
+            <li>273-923-344</li>
+            <li>e27cheun@uwaterloo.ca</li>
+          </ul>
+        </div>
+      </div>
+        <p style="text-align:center; font-size: 0.7em;">All intellectual property belongs to Jonathan Stroud! Artwork created by Ethney Cheung.</p>
+    </footer>
 </body>
 </html>
