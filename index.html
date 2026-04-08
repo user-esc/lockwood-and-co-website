@@ -34,10 +34,14 @@
       font-style: italic;
     }
     
+    * {
+      box-sizing: border-box;
+    }
+    
     body {
       background-color: #1C1C1C;
       font-family: "Overpass Mono", monospace;
-      font-size: 20px;
+      font-size: 18px;
       margin: 0 auto;
       max-width: 1440px;
       color: white;
@@ -56,7 +60,10 @@
     
     
     .three-grids {
-      
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      align-items: center;  
+      text-align: center;
     }
     
     #nav {
@@ -90,7 +97,13 @@
     }
     
     h2 {
-      font-size: 2.5em;
+      font-size: 2.8em;
+    }
+    
+    hr {
+      border: none;
+      height: 0.5px;
+      background-color: white; 
     }
 
   </style>
@@ -114,27 +127,45 @@
       Here at Lockwood & Co., we are dedicated to serving the public in Britain's fight against the Problem. We investigate hauntings, dealing with dangerous manifestations, with the goal of keeping the public safe. Whether you're troubled by lurkers, cold maidens, or wraiths, we're here to handle any disturbances.
     </p>
     
-    <hr style="border: none; height: 0.5px; background-color: white;">
+    <hr>
     <div class="two-grids">
       <div><h2>1. Locate the visitor</h2></div>
       <div>
         <p>Utilize our talents to identify a visitor and track its vanishing point to locate the source.</p>
       </div>
     </div>
-    <hr style="border: none; height: 0.5px; background-color: white;">
+    <hr>
     <div class="two-grids">
       <div><h2>2. Contain the source</h2></div>
       <div>
         <p>Retrieve and seal the source with protective materials to eventually be disposed of.</p>
       </div>
     </div>
-    <hr style="border: none; height: 0.5px; background-color: white;">
+    <hr>
     
     <img src="placeholder.jpg" alt="yes" width="1200px;" height="600px">
     
     <div style="background-color: #282D2D; padding: 20px">
     <h2 style="text-align: center;">"A safe space means a satisfied customer!"</h2>
     </div>
+    
+    <h2 style="text-align: center">The Team</h2>
+    
+    <div class="three-grids">
+      <div>
+        <img src="placeholder.jpg" alt="yes" width="380px;" height="456px">
+        <p>Lucy Carlyle</p>
+      </div>
+      <div>
+        <img src="placeholder.jpg" alt="yes" width="380px;" height="456px">
+        <p>Anthony Lockwood</p>
+      </div>
+      <div>
+        <img src="placeholder.jpg" alt="yes" width="380px;" height="456px">
+        <p>George Cubbins</p>
+      </div>
+    </div>
+    
   </div>
 </body>
 </html>
