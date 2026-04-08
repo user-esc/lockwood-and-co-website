@@ -87,6 +87,18 @@
       float: right;
     }
     
+    .single-container {
+      border: 1px solid white;
+      border-radius: 15px;
+      padding: 50px;
+    }
+    
+    .two-grids {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-gap: 20px;
+      margin: 25px 0;
+    }
     
     #footer-grid {
       display: grid;
@@ -201,6 +213,17 @@
         <div><img src="placeholder.jpg" alt="yes" width="60" height="60"></div>
       </div> 
     </div>
+    
+    <div class="two-grids">
+      <div class="single-container">
+        <h2 style="max-width: 300px">The Haunting of Combe Carey Hall</h2>
+        <p>Venturing into one of the most haunted mansion in England.</p>
+      </div>
+      <div class="single-container">
+        <h2 style="max-width: 300px">The Death of Annabel Ward</h2>
+        <p>Investigating the death of famous actress and society figure, Annabel Ward.</p>
+      </div>
+    </div>
   </div>
       <footer>
       <div id="footer-grid">
@@ -218,7 +241,7 @@
         </div>
         <div>
           <ul id="footer-links">
-            <li>CONTACT AND VISIT</li>
+            <li>CONTACT</li>
             <li>35 Portland Row</li>
             <li>273-923-344</li>
             <li>e27cheun@uwaterloo.ca</li>
